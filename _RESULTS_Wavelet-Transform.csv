@@ -1,0 +1,9 @@
+(PAR) Lower Limit;(PAR) Upper Limit;Peak Count;Mean Peak Amplitude;Mean Peak Prominence;Number of peakless sequences;;;
+1;9;293860;0,769787353;0,207805223;0;pareto candidate;;
+10;19;73283;0,839991447;0,065342152;0;;;
+20;39;27513;0,710767552;0,05891582;0;;;
+40;59;13234;0,769763418;0,042202789;0;;;
+60;79;8581;0,824899743;0,047274883;0;;;
+80;99;6414;0,844762696;0,032008571;0;;;
+100;149;4964;0,87881545;0,044829661;0;pareto candidate;;Best solution (best tradeoff between amplitude and prominence)
+150;199;3489;0,903226128;0,036713183;0;pareto candidate;;
