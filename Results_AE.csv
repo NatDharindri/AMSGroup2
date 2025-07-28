@@ -1,0 +1,3 @@
+Method,Features,Contamination,Latent dims,Epochs,Batch size,avg_Precision,avg_Recall,avg_F1,avg_Detected_Peaks,min_Precision,min_Recall,min_F1,min_Detected_Peaks,max_Precision,max_Recall,max_F1,max_Detected_Peaks,No_peaks_count
+AE,all columns,0.005,4.0,25.0,32.0,0.22632869159375,0.0726348396875,0.10376084925,315.5,0.0,0.0,0.0,64,1.0,0.389558233,0.560693642,766,
+AE,all columns,0.005,4.0,25.0,64.0,0.213304785,0.0667218245625,0.09625067390625,315.5,0.0,0.0,0.0,64,1.0,0.389558233,0.560693642,766,
