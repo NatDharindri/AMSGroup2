@@ -22,10 +22,10 @@ os.chdir(script_dir)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 compute_Threshold_Based_CMD_SPEED = 0
-compute_Threshold_Based_TORQUE = 1
+compute_Threshold_Based_TORQUE = 0
 compute_Wavelet_Transform = 0
 compute_KMEANS = 0
-compute_DBSCAN = 0
+compute_DBSCAN = 1
 
 
 # --- Dataset ---
@@ -82,9 +82,11 @@ if compute_Threshold_Based_CMD_SPEED:
             plt.plot(target, label='Current-Signal')
             plt.plot(peaks_pos, target.iloc[peaks_pos], "rx", label='Peaks')
             plt.grid(True)
-            plt.legend()
+            plt.legend(fontsize=12)
+            plt.tick_params(axis='both', labelsize=12)
             plt.savefig(f"{save_dir}/sequence{sequence}_axis{axis}.png", dpi=300, bbox_inches='tight')
-            plt.show()
+            # plt.show()
+            plt.close()
 
     
     print("Threshold-Based CMD-SPEED completed")
@@ -97,7 +99,7 @@ if compute_Threshold_Based_TORQUE:
     param_threshold = 5
     param_prominence = 1.1
 
-    save_dir = "plots/RESULTS_Threshold-Based-with-TORQUE2"
+    save_dir = "plots/RESULTS_Threshold-Based-with-TORQUE"
     os.makedirs(save_dir, exist_ok=True)
 
     for sequence in range(8):
@@ -111,9 +113,11 @@ if compute_Threshold_Based_TORQUE:
             plt.plot(target, label='Current-Signal')
             plt.plot(peaks_pos, target.iloc[peaks_pos], "rx", label='Peaks')
             plt.grid(True)
-            plt.legend()
+            plt.legend(fontsize=12)
+            plt.tick_params(axis='both', labelsize=12)
             plt.savefig(f"{save_dir}/sequence{sequence}_axis{axis}.png", dpi=300, bbox_inches='tight')
-            plt.show()
+            # plt.show()
+            plt.close()
 
     
     print("Threshold-Based TORQUE completed")
@@ -140,9 +144,11 @@ if compute_Wavelet_Transform:
             plt.plot(target, label='Current-Signal')
             plt.plot(peaks_pos, target.iloc[peaks_pos], "rx", label='Peaks')
             plt.grid(True)
-            plt.legend()
+            plt.legend(fontsize=12)
+            plt.tick_params(axis='both', labelsize=12)
             plt.savefig(f"{save_dir}/sequence{sequence}_axis{axis}.png", dpi=300, bbox_inches='tight')
-            plt.show()
+            # plt.show()
+            plt.close()
     
 
     print("Wavelet Transform completed")
@@ -216,9 +222,11 @@ if compute_KMEANS:
             plt.plot(target, label='Current-Signal')
             plt.plot(peaks_pos, target.iloc[peaks_pos], "rx", label='Peaks')
             plt.grid(True)
-            plt.legend()
+            plt.legend(fontsize=12)
+            plt.tick_params(axis='both', labelsize=12)
             plt.savefig(f"{save_dir}/sequence{sequence}_axis{axis}.png", dpi=300, bbox_inches='tight')
-            plt.show()
+            # plt.show()
+            plt.close()
                 
 
     print("KMEANS completed")
@@ -265,9 +273,11 @@ if compute_DBSCAN:
             plt.plot(target, label='Current-Signal')
             plt.plot(peaks_pos, target.iloc[peaks_pos], "rx", label='Peaks')
             plt.grid(True)
-            plt.legend()
+            plt.legend(fontsize=12)
+            plt.tick_params(axis='both', labelsize=12)
             plt.savefig(f"{save_dir}/sequence{sequence}_axis{axis}.png", dpi=300, bbox_inches='tight')
-            plt.show()
+            # plt.show()
+            plt.close()
                     
 
     print("DBSCAN completed")
