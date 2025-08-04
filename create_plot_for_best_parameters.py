@@ -25,12 +25,12 @@ compute_Threshold_Based_CMD_SPEED = 0
 compute_Threshold_Based_TORQUE = 0
 compute_Wavelet_Transform = 0
 compute_KMEANS = 0
-compute_DBSCAN = 1
+compute_DBSCAN = 0
 
 
 # --- Dataset ---
 
-csv_files = glob.glob(r"clean_datasets/*.csv")
+csv_files = sorted(glob.glob(r"clean_datasets/*.csv"))
 df_list = []
 for file in csv_files:
     df = pd.read_csv(file, sep=",", encoding="utf-8", parse_dates=True)
