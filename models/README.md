@@ -1,4 +1,4 @@
-You need to mention the path to the CNC Folder in each notebook. 
+The path to the CNC Folder needs to be updated in each python notebook. 
 
 Generate pseudo-labels
 Run create-pseudo-labels.ipynb first. 
@@ -13,4 +13,5 @@ After generating pseudo-labels, use the saved data path as input for the remaini
 Results and images would be saved to the paths 'path/results/' and 'path/Plots/' 
 
 For 3 and 4, the numerical_features variable needs to be changed as required (by default considers all features) due to computational limitations. 
+
 
